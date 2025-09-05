@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>07_dom.html</title>
+</head>
+<body>
+    <button id="button">Change Background</button>
+    <p id="color"></p>
+    <p id="message"></p>
+</body>
+<script>
+    let color = prompt("What is your favorite color?");
+    document.getElementById("color").textContent = `Your favorite color is ${color}`;
+
+    document.getElementById("button").addEventListener("click", function() {
+        document.body.style.backgroundColor =  `${color}`; 
+    });
+
+    setTimeout(() => {
+        document.getElementById("message").textContent = "This message appears after 2 seconds";
+    }, 2000);
+</script>
+</html>
