@@ -1,0 +1,1 @@
+After the rebase, I have noticed that the origin/main is left behind and the feature commits are in the top making a history cleaner
