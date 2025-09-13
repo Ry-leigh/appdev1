@@ -21,6 +21,7 @@ function AboutPage() {
 function App() {
     return (
     <div>
+      <img className="avatar" />
       <h1>Welcome to my app</h1>
       <MyButton />
     </div>
