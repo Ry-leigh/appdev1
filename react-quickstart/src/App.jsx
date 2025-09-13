@@ -18,13 +18,26 @@ function AboutPage() {
   );
 }
 
+const user = {
+  name: 'Ryan',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90,
+};
+
 function App() {
-    return (
-    <div>
-      <img className="avatar" />
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
   );
 }
 
