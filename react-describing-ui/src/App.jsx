@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import TeaSet from './components/App'
+import { rootGreet } from './components/RootModule'
+import RootComponent from './components/RootComponent';
 
-function App() {
-  const [count, setCount] = useState(0)
-  
+function App() {  
+  rootGreet();
+
   return (
     <>
-     <TeaSet />
+     <RootComponent />
     </>
   )
 }
