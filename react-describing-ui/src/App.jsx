@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import TodoList from './components/App'
-import './App.css'
+import List from './components/App'
 
 function App() {
   const [count, setCount] = useState(0)
   
   return (
     <>
-     <TodoList />
+     <List />
     </>
   )
 }
